@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import "./app.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+  const [todos,setTodos] = useState([
+    {
+      id: 1,
+      text: "ir para a faculdade",
+      category: "trabalho",
+      inCompleted: false,
+    },
+    {
+      id: 2,
+      text: "dormir",
+      category: "descanso",
+      inCompleted: false,
+    },
+    {
+      id: 3,
+      text: "fazer compras",
+      category: "alimentacap",
+      inCompleted: false,
+    },
+    
+  ])
+ return (
+  <div className='app'>
+    <h1>lista de tarefas</h1>
+    <div className='todo-list'>
+      {todos.map((todos) => (
+        <div className='todos'>
+          <div className='content'>
+            <p>{todos.text}</p>
+            <div className='category'>
+              <p>({todos.category})</p>
+            </div>
+            <div>
+              <button>Completar</button>
+              <button>x</button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
   )
 }
 
