@@ -3,5 +3,26 @@ body{
   background-color: f4f4f4;
   padding: 30px;
   color: #333;
-  
+}
+
+.app{
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: #efefef;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+}
+h2{
+ margin-bottom: 10px 0;
+}
+
+p{
+  margin: 10px 0;
+}
+input{
+  box-sizing: border-box;
 }
