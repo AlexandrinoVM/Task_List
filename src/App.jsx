@@ -30,7 +30,7 @@ function App() {
     <h1>lista de tarefas</h1>
     <div className='todo-list'>
       {todo.map((todo) => (
-        <Todo Todo = {todo}/>
+        <Todo key={todo.id} Todo = {todo}/>
       ))}
     </div>
     <AddTask />
