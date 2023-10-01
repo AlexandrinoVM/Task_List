@@ -3,6 +3,7 @@ body{
   background-color: f4f4f4;
   padding: 30px;
   color: #333;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 102, 161) 0%, rgb(0, 68, 108) 90.1%);
 }
 
 .app{
@@ -31,10 +32,17 @@ input{
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
+  
 }
 select{
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
+}
+
+.todo-list{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
 }

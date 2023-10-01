@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from './Button'
 import style from "./AddTaskModule.css"
-function AddTask() {
+function AddTask({addTodo}) {
   const [value,setvalue] = useState("")
   const [category,setcategory] = useState("")
 
@@ -9,7 +9,7 @@ function AddTask() {
     e.preventDefault();
     if(!value || !category)return;
     console.log(value,category)
-
+    addTodo(value,category)
     setvalue("")
     setcategory("")
   }

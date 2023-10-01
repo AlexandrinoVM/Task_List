@@ -4,17 +4,18 @@ button{
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    opacity: 0.5;
+    opacity: 0.9;
     transition: 0.3s;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .complete{
-    background-color: #5adbb5;
+    background-color: #228B22;
 }
 
 .remove{
-    background-color: #f34336;
+    background-color: #8B0000;
 }
 
 button:hover{
