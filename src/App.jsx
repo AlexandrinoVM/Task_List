@@ -9,20 +9,8 @@ function App() {
   const [todo,setTodos] = useState([
     {
       id: 1,
-      text: "ir para a faculdade",
+      text: "exemplo",
       category: "trabalho",
-      inCompleted: false,
-    },
-    {
-      id: 2,
-      text: "dormir",
-      category: "descanso",
-      inCompleted: false,
-    },
-    {
-      id: 3,
-      text: "fazer compras",
-      category: "alimentacap",
       inCompleted: false,
     },
     
