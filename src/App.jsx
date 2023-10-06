@@ -13,8 +13,6 @@ function App() {
       category: "trabalho",
       inCompleted: false,
     },
-   
-    
   ])
 
     
